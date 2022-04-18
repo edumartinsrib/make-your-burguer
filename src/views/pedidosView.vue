@@ -1,6 +1,6 @@
 <template>
   <div class="mt-10 font-bold text-5xl ">
-    <h1>Gerenciar Pedidos:</h1>
+    <h1>Gerenciar Pedidos</h1>
     <dashboardPedidos />
   </div>
 </template>

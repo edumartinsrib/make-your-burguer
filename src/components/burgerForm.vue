@@ -75,7 +75,6 @@
         "
         v-model="pao"
       >
-        <option value="">Selecione o seu pão</option>
         <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">
           {{ pao.tipo }}
         </option>
@@ -115,7 +114,7 @@
         "
         v-model="carne"
       >
-        <option value="">Selecione o tipo de carne</option>
+        
         <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">
           {{ carne.tipo }}
         </option>
@@ -238,7 +237,7 @@ export default {
         carne: this.carne,
         pao: this.pao,
         opcionais: Array.from(this.opcionais),
-        status: "solicitado",
+        status: "Solicitado",
       };
       const dataJson = JSON.stringify(data);
       const req = await fetch("http://localhost:3000/burgers", {
